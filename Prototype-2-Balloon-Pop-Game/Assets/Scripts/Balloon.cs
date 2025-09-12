@@ -8,7 +8,7 @@ public class Balloon : MonoBehaviour
 
     public int scoreToGive; // Score given for the popped balloon
 
-    private ScoreMananger scoreManager; // A variable to manage the ScoreManager
+    // private ScoreMananger scoreManager; // A variable to manage the ScoreManager
 
     public GameObject popEffect; //Reference pop effect parcticle system
 

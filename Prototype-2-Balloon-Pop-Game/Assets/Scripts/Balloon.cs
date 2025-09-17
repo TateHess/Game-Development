@@ -8,14 +8,15 @@ public class Balloon : MonoBehaviour
 
     public int scoreToGive; // Score given for the popped balloon
 
-    // private ScoreMananger scoreManager; // A variable to manage the ScoreManager
+    private ScoreManager scoreManager; // A variable to manage the ScoreManager
 
     public GameObject popEffect; //Reference pop effect parcticle system
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        scoreManager = GameObject.Find("ScoreManager").
+        GetComponent<ScoreManager>();
     }
 
     void OnMouseDown()
@@ -25,8 +26,10 @@ public class Balloon : MonoBehaviour
 
         transform.localScale += Vector3.one * scaleToIncrease;
 
-        if (clicktoPop == 0)
+        if(clicktoPop == 0)
         {
+            scoreManager.IncreaseScoreText(scoreToGive); //Increase Score
+            //Instant
             Destroy(gameObject); // POP Balloon
         }
 }

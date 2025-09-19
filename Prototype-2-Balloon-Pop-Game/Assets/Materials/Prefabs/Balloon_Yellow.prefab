@@ -183,6 +183,9 @@ GameObject:
   - component: {fileID: 1864753578500030292}
   - component: {fileID: 8626059218014131989}
   - component: {fileID: 8300915709447654582}
+  - component: {fileID: 799151073811870259}
+  - component: {fileID: 4536201954629174442}
+  - component: {fileID: 7314553420457138493}
   m_Layer: 0
   m_Name: Balloon_Yellow
   m_TagString: Untagged
@@ -258,6 +261,49 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &799151073811870259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979710732620253950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06523db8e6692e4aa5820f24b9fe0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicktoPop: 3
+  scaleToIncrease: 0.3
+  scoreToGive: 0
+  popEffect: {fileID: 0}
+--- !u!114 &4536201954629174442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979710732620253950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8ff90974e604f4e87dd207dbf67c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &7314553420457138493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979710732620253950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee2fec1cd98dce489ff4a2842bec559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!1 &8951687405646108899
 GameObject:
   m_ObjectHideFlags: 0

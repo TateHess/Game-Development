@@ -183,6 +183,9 @@ GameObject:
   - component: {fileID: 317018853254421484}
   - component: {fileID: 975287162283224017}
   - component: {fileID: 829879922621051459}
+  - component: {fileID: 9091919440146876354}
+  - component: {fileID: 4356315385662909984}
+  - component: {fileID: 3265361155134911636}
   m_Layer: 0
   m_Name: Balloon_Red
   m_TagString: Untagged
@@ -200,7 +203,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.92471, y: 0.8205949, z: 0.7732129}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5418388384786945224}
@@ -258,6 +261,49 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &9091919440146876354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919848039282510650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06523db8e6692e4aa5820f24b9fe0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicktoPop: 3
+  scaleToIncrease: 0.3
+  scoreToGive: 0
+  popEffect: {fileID: 0}
+--- !u!114 &4356315385662909984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919848039282510650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8ff90974e604f4e87dd207dbf67c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &3265361155134911636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919848039282510650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee2fec1cd98dce489ff4a2842bec559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!1 &9063212708108258714
 GameObject:
   m_ObjectHideFlags: 0

@@ -30,6 +30,7 @@ public class Balloon : MonoBehaviour
         {
             scoreManager.IncreaseScoreText(scoreToGive); //Increase Score
             //Instant
+            Instantiate(popEffect, transform.position, transform.rotation);
             Destroy(gameObject); // POP Balloon
         }
 }

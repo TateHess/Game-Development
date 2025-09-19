@@ -97,6 +97,9 @@ GameObject:
   - component: {fileID: 8544456578663290971}
   - component: {fileID: 6900051230949750461}
   - component: {fileID: 1048432409103215986}
+  - component: {fileID: 341351671182360204}
+  - component: {fileID: 258780570330208986}
+  - component: {fileID: 2332727767370510866}
   m_Layer: 0
   m_Name: Balloon_Blue
   m_TagString: Untagged
@@ -172,6 +175,49 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &341351671182360204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2887601791482438174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06523db8e6692e4aa5820f24b9fe0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicktoPop: 3
+  scaleToIncrease: 0.3
+  scoreToGive: 0
+  popEffect: {fileID: 0}
+--- !u!114 &258780570330208986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2887601791482438174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8ff90974e604f4e87dd207dbf67c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &2332727767370510866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2887601791482438174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee2fec1cd98dce489ff4a2842bec559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!1 &6060489788953725732
 GameObject:
   m_ObjectHideFlags: 0

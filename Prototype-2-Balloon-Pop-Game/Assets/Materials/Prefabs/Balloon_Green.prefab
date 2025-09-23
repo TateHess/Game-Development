@@ -98,7 +98,6 @@ GameObject:
   - component: {fileID: 9004507366174912126}
   - component: {fileID: 1905772108878634864}
   - component: {fileID: 939691020777756645}
-  - component: {fileID: 359129081266792838}
   - component: {fileID: 8872015770715501039}
   m_Layer: 0
   m_Name: Balloon_Green
@@ -188,20 +187,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
---- !u!114 &359129081266792838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4878593577832122429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ee2fec1cd98dce489ff4a2842bec559, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 0}
+  upperBound: 15
+  scoreManager: {fileID: 0}
+  balloon: {fileID: 0}
 --- !u!114 &8872015770715501039
 MonoBehaviour:
   m_ObjectHideFlags: 0

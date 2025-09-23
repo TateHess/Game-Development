@@ -12,17 +12,17 @@ public class SpawnManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("SpwanRandomBalloon", startDelay, spawnInterval);
+        InvokeRepeating("SpawnRandomBalloon", startDelay, spawnInterval);
     }
 
     void SpawnRandomBalloon()
     {
         // Get a random position on the x-axis
-        Vector3 spawnPos = new Vector3(Random.Range(-xRange, xRange), yPos, 0);
+        Vector3 spawnPos = new Vector3(Random.Range(-xRange, xRange), yPos, 100);
         // Pick a random balloon from the balloon array (list)
         int balloonIndex = Random.Range(0, balloonPrefabs.Length);
         // Spawn the random balloon at the spawn position
-        Instantiate(balloonPrefabs[balloonIndex], spawnPos, balloonPrefabs[balloonIndex].transform.roatation);
+        Instantiate(balloonPrefabs[balloonIndex], spawnPos, balloonPrefabs[balloonIndex].transform.rotation);
     }
   
 }

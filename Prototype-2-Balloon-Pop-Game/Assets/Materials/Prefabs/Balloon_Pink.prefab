@@ -99,7 +99,6 @@ GameObject:
   - component: {fileID: 7219658977437533153}
   - component: {fileID: 5212175725696661023}
   - component: {fileID: 6143828417352251145}
-  - component: {fileID: 827950868078860115}
   m_Layer: 0
   m_Name: Balloon_Pink
   m_TagString: Untagged
@@ -204,20 +203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
---- !u!114 &827950868078860115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4290468912599175708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ee2fec1cd98dce489ff4a2842bec559, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 0}
+  upperBound: 15
+  scoreManager: {fileID: 0}
+  balloon: {fileID: 0}
 --- !u!1 &6298287056737246456
 GameObject:
   m_ObjectHideFlags: 0

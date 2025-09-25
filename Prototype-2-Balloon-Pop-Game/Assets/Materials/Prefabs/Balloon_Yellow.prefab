@@ -274,8 +274,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clicktoPop: 3
   scaleToIncrease: 0.3
-  scoreToGive: 0
-  popEffect: {fileID: 0}
+  scoreToGive: 10
+  popEffect: {fileID: 9022367905866422780, guid: a024e8ab8b2f62341b4e6b16626b559a, type: 3}
 --- !u!114 &4536201954629174442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  upperBound: 15
+  upperBound: 40
   scoreManager: {fileID: 0}
   balloon: {fileID: 0}
 --- !u!1 &8951687405646108899

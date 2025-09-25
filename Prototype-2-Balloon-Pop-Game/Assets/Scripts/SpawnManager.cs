@@ -5,8 +5,8 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] balloonPrefabs; //Array to store balloon game objects
     public float startDelay = 0.5f;
     public float spawnInterval = 1.5f;
-    public float xRange = 10.0f;
-    public float yPos = -10.0f;
+    public float xRange = 15.0f;
+    public float yPos = -100.0f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

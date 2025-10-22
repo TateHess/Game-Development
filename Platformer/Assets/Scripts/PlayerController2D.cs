@@ -31,9 +31,9 @@ public class PlayerController2D : MonoBehaviour
     void FixedUpdate()
     {
         //Gather Inputs
-        float moveInput = moveInput.GetAxisRaw("Horizontal");
+        float moveInput = Input.GetAxisRaw("Horizontal");
         //Make the player move side to side
-        rig.velocity = new Vector2(moveInput * moveSpeed, rig.velocity.y);
+        rig.linearVelocity = new Vector2(moveInput * moveSpeed, rig.linearVelocity.y);
     }
 
     // Update is called once per frame
@@ -42,7 +42,7 @@ public class PlayerController2D : MonoBehaviour
         // If we press the jump button and we are grounded, then jump
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
-            ifGrounded = false;
+            isGrounded = false;
             rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); //Makes the player jump with all of the force applied
         }
         // If we fall below bottomBound(-4) on the Y axis then game over is triggered
@@ -63,6 +63,6 @@ public class PlayerController2D : MonoBehaviour
     //Called when hit by an enemy or hwne you fall of the level
     public void GameOver()
     {
-        scoreManager.LoadScene(ScoreManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

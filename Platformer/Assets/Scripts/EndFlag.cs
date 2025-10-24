@@ -6,7 +6,7 @@ public class EndFlag : MonoBehaviour
     public bool finalLevel;
     public string nextLevelName;
 
-
+    //Collision detection
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Did the player hit us?

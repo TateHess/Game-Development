@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         //Move towards the target position
-        transform.position = Vector3.MoveTowards(transform.posititon, targetPos, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
 
         //Are we at the tagret position
         if (transform.position == targetPos)
@@ -50,7 +50,7 @@ public class Enemy : MonoBehaviour
         }
     }
     
-    private void OnDrawGismos()
+    private void OnDrawGizmos()
     {
         Vector3 from;
         Vector3 to;
@@ -68,7 +68,9 @@ public class Enemy : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawLine(from, to);
-        Gizmos.DrawineSphere(to, 0.f);
+        Gizmos.DrawWireSphere(to, 0.2f);
+        Gizmos.DrawWireSphere(from, 0.2f);
+        
     }
 
 
